@@ -1,0 +1,141 @@
+.App {
+    text-align: center;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  
+  
+  .particles {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  @font-face {
+    font-family: 'SEGA LOGO FONT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SEGA LOGO FONT'), url('../SEGA.woff') format('woff');
+}
+
+.robo {
+    font-family: 'SEGA LOGO FONT';
+    font-weight: 200;
+    color: black;
+}
+  
+.shadowH2 {
+  color: white;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+  
+.shadowH1 {
+  color: black;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+/*                 */
+
+.cta-btn {
+    display: inline-block;
+    position: relative;
+    padding: .8rem 1.6rem;
+    font-weight: 700;
+    line-height: 1;
+    z-index: 1;
+    transition: all .6s cubic-bezier(.19,1,.22,1);
+}
+.cta-btn--hero {
+    background-image: linear-gradient(135deg,blue,black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg,#02aab0,black);
+    border-image-slice: 1;
+}
+
+
+.cta-btn--hero:hover {
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+}
+
+.cta-btn:hover {
+   
+    color: white;
+    background: linear-gradient(90deg, rgba(246,255,96,0.835171568627451) 13%, rgba(213,16,126,0.9108018207282913) 48%, rgba(0,212,255,0.7371323529411764) 86%);  
+}
+
+a, p {
+    font-family: Montserrat,sans-serif;
+    font-size: 1.6rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+#hero {
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 0;
+    background: #fff;
+    font-weight: 400;
+    color: #272341;
+    padding: 0 5.6rem;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+

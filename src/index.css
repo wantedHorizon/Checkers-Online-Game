@@ -1,0 +1,233 @@
+#root {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    margin: 0;
+    font-family:'Courier New',Courier,monospace;
+    /* //font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: rgb(246,255,96);
+    background: linear-gradient(90deg, rgba(246,255,96,0.835171568627451) 13%, rgba(213,16,126,0.9108018207282913) 48%, rgba(0,212,255,0.7371323529411764) 86%);  }
+
+.players > div {
+    display: inline-block;
+    border: 3px solid  linear-gradient(135deg,#02aab0,black);;
+    font-size: 30px;
+    padding: 5px 10px;
+    min-width: 250px;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px white;
+    box-shadow:2px 2px 4px #000000;
+
+}
+
+
+.game-board {
+    display: inline-block;
+    border: 10px solid rgba(0,212,255,0.7371323529411764);
+    position: relative;
+}
+
+.game-status {
+    display: block;
+    padding: 5px;
+    background-color: #fff;
+    border: 5px solid rgba(0,212,255,0.7371323529411764);
+    width: 55%;
+    max-width: 500px;
+
+    font-family: Montserrat,sans-serif;
+    font-size: 2rem;
+   
+    position: relative;
+    top: 15px;
+    z-index: 3;
+    margin: 0 auto;
+}
+
+.time-travel {
+    max-width: 660px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+
+.undo {
+
+    font-family: Montserrat,sans-serif;
+    font-size: 1.6rem;
+   
+    padding: 5px;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+    border: 3px solid black;
+    margin: 5px;
+    margin-top: 5px;
+
+    cursor: pointer;
+    float: right;
+   
+  
+}
+.undo:hover {
+    color: red;
+    background: black;
+}
+
+.redo {
+
+    font-family: Montserrat,sans-serif;
+    font-size: 1.6rem;
+   
+    padding: 5px;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+    border: 3px solid black;
+    margin: 5px;
+    margin-top: 5px;
+
+    cursor: pointer;
+    float: right;
+   
+  
+}
+.redo:hover {
+    color: red;
+    background: black;
+}
+
+
+
+
+.main-menu {
+
+    font-family: Montserrat,sans-serif;
+    font-size: 1.6rem;
+   
+    padding: 5px;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+    border: 3px solid black;
+    margin: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    float: left;
+   
+  
+}
+.main-menu:hover {
+    color: red;
+    background: black;
+}
+
+
+.undo.disabled {
+    cursor: not-allowed;
+    opacity: .4;
+}
+
+.board-col {
+    display: inline-block;
+    max-width: 80px;
+}
+
+.square {
+    background: no-repeat #fff;
+    border: none;
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    background-origin: content-box;
+    background-size: contain;
+}
+
+.isActive {
+    background-color: wheat;
+}
+
+.square.movable.player1-move {
+    background-color: #f7f2b3;
+}
+
+.square.movable.player2-move {
+    background-color: #7fffd4;
+}
+
+.square.player1, .square.player2, .square.movable {
+    cursor: pointer;
+}
+
+.square.black {
+    background-color: #262626;
+}
+
+.square.player1 {
+    background-image: url("./assests/img/yellow-pawn.png");
+}
+.square.player2 {
+    background-image: url("./assests/img/blue-pawn.png");
+}
+.square.player1.king {
+    background-image: url("./assests/img/yellow-king.png");
+}
+.square.player2.king {
+    background-image: url("./assests/img/blue-king.png");
+}
+
+@media only screen and (max-width: 700px) {
+
+    .board-col {
+        max-width: 60px;
+    }
+    .square {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    .board-col {
+        max-width: 50px;
+    }
+    .square {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+
+    .board-col {
+        max-width: 40px;
+    }
+    .square {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+
+    .board-col {
+        max-width: 35px;
+    }
+    .square {
+        height: 35px;
+        width: 35px;
+    }
+}
