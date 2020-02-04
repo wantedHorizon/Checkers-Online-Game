@@ -2,12 +2,11 @@ import React from 'react';
 import { returnPlayerName } from '../utils.js';
 import { ReactCheckers } from '../components/ReactCheckers';
 import Board from '../components/Board';
-import { Router } from 'react-router-dom'
-import createBrowserHistory from 'history/createBrowserHistory'
+import { Router } from 'react-router-dom';
 import { Opponent } from '../components/Opponent';
 import Particles from 'react-particles-js';
 import Tilt from 'react-tilt';
-
+import { createBrowserHistory  } from 'history';
 import './Game.css';
 
 
