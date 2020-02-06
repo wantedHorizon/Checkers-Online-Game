@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/checkers-online-game/static/css/main.d7ccce98.chunk.css",
+    "main.js": "/checkers-online-game/static/js/main.f55027d7.chunk.js",
+    "main.js.map": "/checkers-online-game/static/js/main.f55027d7.chunk.js.map",
+    "runtime-main.js": "/checkers-online-game/static/js/runtime-main.9aee185a.js",
+    "runtime-main.js.map": "/checkers-online-game/static/js/runtime-main.9aee185a.js.map",
+    "static/js/2.e94072b2.chunk.js": "/checkers-online-game/static/js/2.e94072b2.chunk.js",
+    "static/js/2.e94072b2.chunk.js.map": "/checkers-online-game/static/js/2.e94072b2.chunk.js.map",
+    "index.html": "/checkers-online-game/index.html",
+    "precache-manifest.d7edfb52ea49dc7f20bca1cb51f86fe3.js": "/checkers-online-game/precache-manifest.d7edfb52ea49dc7f20bca1cb51f86fe3.js",
+    "service-worker.js": "/checkers-online-game/service-worker.js",
+    "static/css/main.d7ccce98.chunk.css.map": "/checkers-online-game/static/css/main.d7ccce98.chunk.css.map",
+    "static/js/2.e94072b2.chunk.js.LICENSE": "/checkers-online-game/static/js/2.e94072b2.chunk.js.LICENSE",
+    "static/media/Game.css": "/checkers-online-game/static/media/SEGA.12a3db8b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9aee185a.js",
+    "static/js/2.e94072b2.chunk.js",
+    "static/css/main.d7ccce98.chunk.css",
+    "static/js/main.f55027d7.chunk.js"
+  ]
+}
